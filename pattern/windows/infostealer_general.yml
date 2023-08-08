@@ -17,6 +17,10 @@ signatures:
         - c:\program files (x86)\internet explorer\iexplore.exe
     - indicator:
       - ftp_client_registry
+      safelist:
+        images:
+        - c:\program files\internet explorer\iexplore.exe
+        - c:\program files (x86)\internet explorer\iexplore.exe
     
   infostealer_email_clients:
     short_description: Harvests data from local email clients
