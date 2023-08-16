@@ -40,6 +40,9 @@ signatures:
       - ^(HKLM|HKCU)\\SOFTWARE\\Microsoft\\Internet Explorer\\Security\\
     - registry write:
       - ^(HKLM|HKCU)\\SOFTWARE\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\
+      safelist:
+        images:
+        - C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe
 
   registry_modifies_browser_warnings:
     short_description: Attempts to disable browser security warnings
