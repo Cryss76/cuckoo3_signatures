@@ -13,6 +13,9 @@ signatures:
       - ^(HKLM|HKCU)\\HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\[^\\]+\\ProcessorNameString$
     - registry read:
       - ^(HKLM|HKCU)\\Hardware\\Description\\System\\CentralProcessor(\\|$)
+      safelist:
+        images:
+        - C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe
 
   registry_antivm_bios_check:
     short_description: Checks BIOS information in the registry
