@@ -7,6 +7,10 @@ signatures:
     triggers:
     - file write:
       - .*[^\\]\.(doc|dot|wbk|docx|docm|dotx|dotm|docb|xls|xlt|xlm|xlsx|xlsm|xltx|xltm|xlsb|xla|xlam|xll|xlw|ppt|pot|pps|pptx|pptm|potx|potm|ppam|ppsx|ppsm|sldx|sldm|pub|xps)$
+      safelist:
+        file write:
+        - c:\\Users\\[^\\]+\\AppData\\Local\\Temp\\.*
+        - C:\\Users\\[^\\]+\\AppData\\Roaming\\Microsoft\\Document Building Blocks\\1031\\16\\Built-In Building Blocks\.dotx
 
   files_drops_exe_general:
     short_description: Drops executable file
@@ -33,6 +37,9 @@ signatures:
         - c:\program files\internet explorer\iexplore.exe
         - c:\program files (x86)\internet explorer\iexplore.exe
         - c:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe
+        - C:\Program Files\Microsoft Office\Office16\WINWORD.EXE
+        file write:
+        - C:\\Users\\[^\\]+\\AppData\\Local\\Temp\\WerEtw-[0-9]+\\WPR_initiated_DiagTrackMiniLogger_WPR System Collector.buf.etl
     - file write:
       - ^[a-zA-Z]:\\Documents and Settings\\[^\\]+\\Local Settings\\.*
 

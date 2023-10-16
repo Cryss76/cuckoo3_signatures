@@ -12,3 +12,6 @@ signatures:
       - ^(HKLM|HKCU)\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\.+\\DisplayName$
     - registry:
       - ^(HKLM|HKCU)\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall$
+      safelist:
+         images:
+         - C:\Program Files\Microsoft Office\Office16\WINWORD.EXE
