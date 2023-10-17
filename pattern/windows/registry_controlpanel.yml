@@ -27,3 +27,4 @@ signatures:
         images:
         - c:\program files\internet explorer\iexplore.exe
         - c:\program files (x86)\internet explorer\iexplore.exe
+        - C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
